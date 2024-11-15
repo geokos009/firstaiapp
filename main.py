@@ -1,6 +1,7 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain import LLMChain
 from langchain import PromptTemplate
+import streamlit as st
 
 import os
 
@@ -24,9 +25,6 @@ fbpost_chain = fb_prompt | gemini_model
 
 response = fbpost_chain.invoke({"number" : 5, "topic" : "Wars in Middle East"})
 
-
-
-import streamlit as st
 
 st.header("Facebook Post Generator")
 
