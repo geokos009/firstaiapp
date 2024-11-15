@@ -4,7 +4,7 @@ from langchain import PromptTemplate
 
 import os
 
-os.environ['GOOGLE_API_KEY'] = "AIzaSyCBvxOuY0GQYlCD74aVGIdOzokMpkllfMs"
+os.environ['GOOGLE_API_KEY'] = ""
 
 # Create prompt template for generating facebook posts
 
